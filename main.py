@@ -86,6 +86,12 @@ st.set_page_config(
 
 # Create a header element
 st.header("Sovereign Chat")
+st.info("If you don't get answer, our you are still unsure, contact us [here](mailto:chat@sovereignoutcomes.com)", icon="📃")
+
+if "messages" not in st.session_state.keys(): # Initialize the chat messages history
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Ask anything about online Privacy & Security!"}
+    ]
 
 # Change prompt: "You are an expert on the Streamlit Python library and your job is to answer technical questions. Assume that all questions are related to the Streamlit Python library. Keep your answers technical and based on facts – do not hallucinate features."
 system_prompt = "You are a helpful AI assistant who answers questions about online Privacy & Security."
@@ -129,6 +135,7 @@ if user_prompt := st.chat_input("Your message here", key="user_input"):
     # here once the LLM has finished generating the complete response.
     response = llm_chain.invoke({"question": user_prompt})
 
+    
     # Add the response to the session state
     st.session_state.messages.append(
         {"role": "assistant", "content": response}
@@ -137,3 +144,12 @@ if user_prompt := st.chat_input("Your message here", key="user_input"):
     # Add the response to the chat window
     with st.chat_message("assistant"):
         st.markdown(response)
+
+# If last message is not from assistant, generate a new response
+if st.session_state.messages[-1]["role"] != "assistant":
+    with st.chat_message("assistant"):
+        with st.spinner("Thinking..."):
+            response = st.session_state.chat_engine.chat(user_prompt)
+            st.write(response.response)
+            message = {"role": "assistant", "content": response.response}
+            st.session_state.messages.append(message) # Add response to message history
