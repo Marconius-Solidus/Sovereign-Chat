@@ -32,6 +32,7 @@ def create_chain(system_prompt):
     # responses in real-time.
     # callback_manager = CallbackManager([stream_handler])
 
+    #DIFFERENT MODEL FROM HUGGING SPACE
     (repo_id, model_file_name) = ("TheBloke/Mistral-7B-Instruct-v0.1-GGUF",
                                   "mistral-7b-instruct-v0.1.Q4_0.gguf")
 
@@ -80,19 +81,15 @@ def create_chain(system_prompt):
 
 # Set the webpage title
 st.set_page_config(
-    page_title="Your own aiChat!"
+    page_title="Sovereign Chat"
 )
 
 # Create a header element
-st.header("Your own aiChat!")
+st.header("Sovereign Chat")
 
-# This sets the LLM's personality for each prompt.
-# The initial personality provided is basic.
-# Try something interesting and notice how the LLM responses are affected.
-system_prompt = st.text_area(
-    label="System Prompt",
-    value="You are a helpful AI assistant who answers questions in short sentences.",
-    key="system_prompt")
+# Change prompt: "You are an expert on the Streamlit Python library and your job is to answer technical questions. Assume that all questions are related to the Streamlit Python library. Keep your answers technical and based on facts – do not hallucinate features."
+system_prompt = "You are a helpful AI assistant who answers questions about online Privacy & Security."
+   
 
 # Create LLM chain to use for our chatbot.
 llm_chain = create_chain(system_prompt)
