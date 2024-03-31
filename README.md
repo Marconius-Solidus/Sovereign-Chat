@@ -8,7 +8,7 @@ The setup assumes you have `python` already installed and `venv` module availabl
 
 1. Download the code or clone the repository.
 ```bash
-https://github.com/Marconius-Solidus/Sovereign-Chat.git
+git clone https://github.com/Marconius-Solidus/Sovereign-Chat.git
 ```
 3. Inside the root folder of the repository, initialize a python virtual environment:
 ```bash
