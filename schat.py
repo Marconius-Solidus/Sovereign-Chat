@@ -14,7 +14,7 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
 
 # Replace this with your HF token
 os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "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"
-
+jzePE2lXzrVloaCBArtfoh5YZRwI580Y
 from embedchain import App
 
 config = {
