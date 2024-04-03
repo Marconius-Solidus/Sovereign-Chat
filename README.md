@@ -31,4 +31,4 @@ streamlit run main.py
 
 # Screenshot
 
-![Screenshot from 2023-10-23 20-00-09](https://github.com/lalanikarim/ai-chatbot/assets/1296705/65ceac4a-f3c0-41db-8519-182076afb215)
+![Screenshot](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/Screenshot)
