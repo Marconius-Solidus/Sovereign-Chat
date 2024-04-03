@@ -1,0 +1,9 @@
+llm:
+  provider: huggingface
+  config:
+    model: 'mistralai/Mixtral-8x7B-Instruct-v0.1'
+
+embedder:
+  provider: huggingface
+  config:
+    model: 'sentence-transformers/all-mpnet-base-v2'

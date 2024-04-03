@@ -1,0 +1,5 @@
+embedchain
+streamlit
+pysqlite3-binary
+embedchain[huggingface-hub]
+sentence-transformers
