@@ -13,7 +13,7 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
                                           generate)
 
 # Add your own API key
-os.environ["HUGGINGFACE_ACCESS_TOKEN"] = ""
+os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "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"
 
 # Load LLM from
 @st.cache_resource
