@@ -23,10 +23,10 @@ The setup assumes you have `python` already installed.
 ```bash
 git clone https://github.com/Marconius-Solidus/Sovereign-Chat.git
 ```
-2. Open main.py and add your HuggingFace code to line 16 in the `""`. You can get one [here](https://huggingface.co/settings/tokens).
+2. Open main.py and add your HuggingFace code to line 16 in the `"hf_xxx"`. You can get one [here](https://huggingface.co/settings/tokens).
 
 ```bash
-os.environ["HUGGINGFACE_ACCESS_TOKEN"]= ""
+16 os.environ["HUGGINGFACE_ACCESS_TOKEN"]= "hf_xxx"
 ```
 3. Install required packages
 ```bash
