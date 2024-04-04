@@ -2,7 +2,12 @@
 ## FOSS AI chatbot that answers all questions about online privacy & security
 
 ### What we used?
-Streamlit + Embedchain + HuggingFace API
+[Streamlit](https://github.com/streamlit/streamlit) + [Embedchain](https://github.com/embedchain/embedchain/tree/main) + [HuggingFace](https://huggingface.co/) API
+
+### Data
+We imported data in forms of URLs that are ebmbeded into LLM. Right now, while we are testing multiple LLMs, we are only using small [dataset](https://gist.githubusercontent.com/Marconius-Solidus/1364954319a117c654cda37fc6b2f96e/raw/19281dc976e499911d0b94093c3bb3f6c9d18866/gistfile1.csv) with 4 URLs so the embedding doesn't take long.
+
+In the meantime we are building larger dataset. Right now, we have over 1200 URLs in the dataset that is not public yet.
 
 # Problem with AI API and running models localy
 Right now, we are facing problems with running models. Only functioning AI API was the one from OpenAI, but we don't want to use that one because of data collecting, censorship and overall OpenAI policy.
