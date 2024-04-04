@@ -13,11 +13,11 @@ from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
                                           generate)
 
 # Add your own API key
-os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "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"
+os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "hf_xxx"
 
 # Load LLM from
 @st.cache_resource
-def sadhguru_ai():
+def sovereign_ai():
     app = App.from_config(config_path="config.yaml")
     return app
 
@@ -31,7 +31,7 @@ def read_csv_row_by_row(file_path):
 # Function to add the data
 @st.cache_resource
 def add_data_to_app():
-    app = sadhguru_ai()
+    app = sovereign_ai()
     url = "https://gist.githubusercontent.com/Marconius-Solidus/1364954319a117c654cda37fc6b2f96e/raw/19281dc976e499911d0b94093c3bb3f6c9d18866/gistfile1.csv"  # noqa:E501
     response = requests.get(url)
     csv_file = StringIO(response.text)
@@ -40,7 +40,7 @@ def add_data_to_app():
             app.add(row[0], data_type="web_page")
 
 
-app = sadhguru_ai()
+app = sovereign_ai()
 add_data_to_app()
 
 # AI avatara img
