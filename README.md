@@ -9,7 +9,7 @@ We imported data in forms of URLs that are ebmbeded into LLM. Right now, while w
 
 In the meantime I'm building larger [dataset](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/Data.csv). I would appreciate any contributions to it.
 
-# Problem with AI API and running models localy
+# Problem with AI API and running models locally
 Right now, I are facing problems with running models. Only functioning AI API was the one from OpenAI, but I don't want to use that one because of data collecting, censorship and overall OpenAI policy.
 
 ## The issue
