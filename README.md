@@ -37,6 +37,6 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
-# Screenshot
+# Preview
 
 ![Screenshot](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/Screenshot)
