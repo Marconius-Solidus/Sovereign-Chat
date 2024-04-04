@@ -5,7 +5,7 @@
 [Streamlit](https://github.com/streamlit/streamlit) + [Embedchain](https://github.com/embedchain/embedchain/tree/main) + [HuggingFace](https://huggingface.co/) API
 
 ### Data
-We imported data in forms of URLs that are ebmbeded into LLM. Right now, while I'm testing multiple LLMs, I'm only using small [dataset](https://gist.githubusercontent.com/Marconius-Solidus/1364954319a117c654cda37fc6b2f96e/raw/19281dc976e499911d0b94093c3bb3f6c9d18866/gistfile1.csv) with 4 URLs so the embedding doesn't take long.
+I imported data in forms of URLs that are ebmbeded into LLM. Right now, while I'm testing multiple LLMs, I'm only using small [dataset](https://gist.githubusercontent.com/Marconius-Solidus/1364954319a117c654cda37fc6b2f96e/raw/19281dc976e499911d0b94093c3bb3f6c9d18866/gistfile1.csv) with 4 URLs so the embedding doesn't take long.
 
 In the meantime I'm building larger [dataset](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/Data.csv). I would appreciate any contributions to it.
 
