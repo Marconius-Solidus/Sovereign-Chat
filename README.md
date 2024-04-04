@@ -14,17 +14,19 @@ Right now, I are facing problems with running models. Only functioning AI API wa
 
 ## The issue
 After running embedding without problems you can ask the question, but you won't get answer and this error will show in Terminal.
-`File "/home/marconius/.local/lib/python3.12/site-packages/embedchain/llm/huggingface.py", line 36, in get_llm_model_answer
+```bash
+File "/home/marconius/.local/lib/python3.12/site-packages/embedchain/llm/huggingface.py", line 36, in get_llm_model_answer
     return HuggingFaceLlm._get_answer(prompt=prompt, config=self.config)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/marconius/.local/lib/python3.12/site-packages/embedchain/llm/huggingface.py", line 48, in _get_answer
     raise ValueError("Either model or endpoint must be set in config")
-ValueError: Either model or endpoint must be set in config`
+ValueError: Either model or endpoint must be set in config
+```
 
 ## How to fix this?
 Honestly I have no idea. I tried re-installing all the packages, even different OSs and running in clean VMs but still got the same error. I also tried using Mistral API, but I got no answer from the chatbot, but also no error. Last resort was [GPT4LL](https://docs.embedchain.ai/components/embedding-models#gpt4all), but on main PC I got error that `BaseLlmConfig` couldn't be imported. In the VM no error was reported, but I also got no answer.
 
-I would like you to try out implementing other [LLMs](https://docs.embedchain.ai/components/llms) so I can figure out where the bug is. To change what LLM is used, just change the [config.yaml](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/config.yaml) file. You can also comment the API key like this`# os.environ["HUGGINGFACE_ACCESS_TOKEN"]= "hf_xxx"` or change it to different `provider os.environ["MISTRAL_API_KEY"] = "xxx"`.
+I would like you to try out implementing other [LLMs](https://docs.embedchain.ai/components/llms) so I can figure out where the bug is. To change what LLM is used, just change the [config.yaml](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/config.yaml) file. You can also comment the API key like this`#os.environ["HUGGINGFACE_ACCESS_TOKEN"]= "hf_xxx"` or change it to different `provider os.environ["MISTRAL_API_KEY"] = "xxx"`.
 
 # How to run it yourself:
 ## Step by Step instructions
