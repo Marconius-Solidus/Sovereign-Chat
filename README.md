@@ -11,6 +11,8 @@ In the meantime I'm building larger [dataset](https://github.com/Marconius-Solid
 # Problem with AI API and running models locally
 Right now, I'm facing problems with running models. Only functioning AI API was the one from OpenAI, but I don't want to use that one because of data collecting, censorship and overall OpenAI policy. I also tried to use GPT4ALL, but I only got the response in Terminal. The response looked like this - pretty wierd.
 
+![Response](https://github.com/Marconius-Solidus/Sovereign-Chat/blob/main/Response.png)
+
 # How to run it yourself:
 ## Step by Step instructions
 
