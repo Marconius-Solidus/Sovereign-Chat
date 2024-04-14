@@ -1,5 +1,5 @@
 embedchain
 streamlit
 pysqlite3-binary
-embedchain[huggingface-hub]
+embedchain[opensource]
 sentence-transformers
