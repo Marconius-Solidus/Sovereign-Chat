@@ -12,9 +12,6 @@ from embedchain.config import BaseLlmConfig
 from embedchain.helpers.callbacks import (StreamingStdOutCallbackHandlerYield,
                                           generate)
 
-# Add your own API key
-os.environ["HUGGINGFACE_ACCESS_TOKEN"] = "hf_xxx"
-
 # Load LLM from
 @st.cache_resource
 def sovereign_ai():
