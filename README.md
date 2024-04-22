@@ -42,7 +42,7 @@ git clone https://github.com/Marconius-Solidus/Sovereign-Chat.git
 ```bash
 pip install -r requirements.txt
 ```
-3. Start `streamlit`:
+3. Start `chainlit`:
 ```bash
 chainlit run main.py
 ```
