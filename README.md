@@ -33,16 +33,18 @@ In the meantime I'm building larger [dataset](https://github.com/Marconius-Solid
 
 The setup assumes you have `python` already installed.
 
-1. Download the code or clone the repository.
+1. Install [Ollama](https://github.com/ollama/ollama?tab=readme-ov-file#ollama).
+
+2. Download the code or clone the repository.
 ```bash
 git clone https://github.com/Marconius-Solidus/Sovereign-Chat.git
 ```
 
-2. Install required packages
+3. Install required packages
 ```bash
 pip install -r requirements.txt
 ```
-3. Start `chainlit`:
+4. Start `chainlit`:
 ```bash
 chainlit run main.py
 ```
